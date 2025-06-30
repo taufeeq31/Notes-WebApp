@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./utility.css">
+    <title>Notes App</title>
+</head>
+<body>
+    <h1 class="heading">Notes App</h1>
+    <div class="note-card" id="note-container">
+        <input class="note-title" id="note-title" type="text" placeholder="Title" />
+        <textarea class="note-body" id="note-area" placeholder="Take a note..."></textarea>
+        <button class="add-btn" id="add-btn">Add</button>
+    </div>
+    <div id="notes-display" class="notes-display">
+        <div class="pin-title d-none">Pinned</div>
+        <div class="pinned-notes-container d-flex wrap gap-md"></div> <!-- Pinned Notes -->
+        <div class="other-title d-none">Others</div>
+        <div class="notes-container d-flex wrap gap-md"></div> <!-- Unpinned Notes-->
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
